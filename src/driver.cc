@@ -5,12 +5,11 @@
 #include "WordSearchSolver.hpp"
 
 int main() {
-  std::vector<std::vector<char>> puzzle{{'d', 'e', 'a', 'o', 'u'},
-                                        {'h', 'e', 'l', 'l', 'o'},
+  std::vector<std::vector<char>> puzzle{{'o', 'e', 'a', 'o', 'h'},
+                                        {'h', 'l', 'l', 'e', 'o'},
                                         {'c', 'a', 'l', 'o', 'm'},
-                                        {'a', 'e', 't', 'a', 'u'},
-                                        {'t', 'e', 't', 'o', 'u'}};
-  // WordSearchSolver wss(puzzle);
-  // std::cout << wss.FindWord("hello", CheckDirection::kHorizontal);
-  // std::cout << wss.FindWord("hello");
+                                        {'a', 'l', 't', 'e', 'u'},
+                                        {'o', 'e', 't', 'o', 'f'}};
+  WordSearchSolver wss(puzzle);
+  std::cout << wss.FindWord("laa", CheckDirection::kLeftDiag);
 }
